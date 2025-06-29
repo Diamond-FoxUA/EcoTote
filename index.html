@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/ecotote/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/ecotote/assets/index-1bX0CV6V.css">
+    <link rel="stylesheet" crossorigin href="/ecotote/assets/index-DGcjmBRi.css">
   </head>
   <body>
     <header class="header">
@@ -592,53 +592,48 @@
 
       <section class="support">
   <div class="container">
-    <h2 class="title support-title">Залишились питання? Зв'яжіться з нами!</h2>
-    <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
-    <form class="support-form">
-      <div class="form-item">
-        <label for="user-name">Ім'я</label>
-        <input type="text" placeholder="Іван" class="input" id="user-name" />
+    <div class="support-txt">
+      <div class="support-header">
+        <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+        <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
       </div>
-      <div class="form-item">
-        <label for="user-email">Електронна пошта</label>
-        <input
-          type="email"
-          placeholder="hello@ecotote.com"
-          class="input"
-          id="user-email"
-        />
-      </div>
-      <div class="input-item">
-        <label class="label" for="message">Повідомлення</label>
-        <textarea
-          class="textarea input"
-          name="message"
-          id="message"
-          placeholder="Введіть своє повідомлення..."
-        ></textarea>
-      </div>
-      <button type="submit" class="support-btn">Надіслати</button>
-    </form>
-    <div class="support-img">
-      <picture>
-        <source
-          srcset="/ecotote/assets/studio-desktop-min-DlVW95g_.jpg 1x, /ecotote/assets/studio-desktop-2x-min-aImwcFdS.jpg 2x, /ecotote/assets/studio-desktop-3x-min-DZ6fsX42.jpg 3x"
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="/ecotote/assets/studio-tab-min-CbVQ5ehu.jpg 1x, /ecotote/assets/studio-tab-2x-min-BBIILkgY.jpg 2x, /ecotote/assets/studio-tab-3x-min-CTC8Zxjo.jpg 3x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="/ecotote/assets/studio-mobile-min-Buv9eoNH.jpg 1x, /ecotote/assets/studio-mobile-2x-min-BMDwj_-Q.jpg 2x, /ecotote/assets/studio-mobile-3x-min-RTOC-Noo.jpg 3x"
-          media="(min-width: 320px)"
-        />
-        <img
-          src="/ecotote/assets/studio-desktop-min-DlVW95g_.jpg"
-          alt="A studio space with sketches, fabric samples, scissors, and a half-finished eco tote bag on a work table."
-        />
-      </picture>
+      <form class="support-form">
+        <label for="user-name"
+          >Ім'я
+          <input
+            type="text"
+            placeholder="Іван"
+            class="user-name"
+            id="user-name"
+            minlength="5"
+            maxlength="64"
+            required
+          />
+        </label>
+        <label for="user-email"
+          >Електронна пошта
+          <input
+            type="email"
+            placeholder="hello@ecotote.com"
+            class="user-email"
+            id="user-email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+        </label>
+        <label for="message"
+          >Повідомлення
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Введіть своє повідомлення..."
+            maxlength="500"
+          ></textarea>
+        </label>
+        <button type="submit" class="support-btn">Надіслати</button>
+      </form>
     </div>
+    <div class="support-img"></div>
   </div>
 </section>
 
